@@ -40,7 +40,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.MainSystemFile, function (sprite
             dothis = 1
             tiles.setCurrentTilemap(tilemap`level13`)
         } else if (otherSprite == mySprite3) {
-            game.showLongText("0.04a - Added About me", DialogLayout.Center)
+            game.showLongText("0.02 - Removed the Ability to change brightness, under maintenance", DialogLayout.Center)
         } else if (otherSprite == mySprite4) {
             game.showLongText("RedScript - Version 0.04a", DialogLayout.Center)
         } else if (otherSprite == personalization) {
@@ -55,17 +55,11 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.MainSystemFile, function (sprite
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     if (dothis == 5) {
         BrightnessWhite += -10
-        BrightnessBlack += 10
-        color.setColor(1, color.rgb(BrightnessWhite, BrightnessWhite, BrightnessWhite))
-        color.setColor(15, color.rgb(BrightnessBlack, BrightnessBlack, BrightnessBlack))
     }
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     if (dothis == 5) {
         BrightnessWhite += 10
-        BrightnessBlack += -10
-        color.setColor(1, color.rgb(BrightnessWhite, BrightnessWhite, BrightnessWhite))
-        color.setColor(15, color.rgb(BrightnessBlack, BrightnessBlack, BrightnessBlack))
     }
 })
 controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -80,10 +74,8 @@ let mySprite4: Sprite = null
 let mySprite3: Sprite = null
 let mySprite: Sprite = null
 let dothis = 0
+let BrightnessWhite = 255
 let BrightnessBlack = 0
-let BrightnessWhite = 0
-BrightnessWhite = 255
-BrightnessBlack = 0
 dothis = 0
 tiles.setCurrentTilemap(tilemap`level4`)
 Create_file("1")
