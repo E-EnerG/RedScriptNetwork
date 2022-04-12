@@ -38,7 +38,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.MainSystemFile, function (sprite
     if (controller.B.isPressed()) {
         if (otherSprite == mySprite) {
             dothis = 1
-            tiles.setCurrentTilemap(tilemap`level6`)
+            tiles.setCurrentTilemap(tilemap`level13`)
         } else if (otherSprite == mySprite3) {
             game.showLongText("0.04a - Added About me", DialogLayout.Center)
         } else if (otherSprite == mySprite4) {
@@ -197,6 +197,6 @@ forever(function () {
     if (dothis == 0) {
         tiles.setCurrentTilemap(tilemap`level4`)
     } else if (dothis == 1) {
-        tiles.setCurrentTilemap(tilemap`level6`)
+        tiles.setCurrentTilemap(tilemap`level13`)
     }
 })
