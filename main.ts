@@ -40,9 +40,9 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.MainSystemFile, function (sprite
             dothis = 1
             tiles.setCurrentTilemap(tilemap`level13`)
         } else if (otherSprite == mySprite3) {
-            game.showLongText("0.02 - Removed the Ability to change brightness, under maintenance", DialogLayout.Center)
+            game.showLongText("0.03 - Changed All Icons On Desktop", DialogLayout.Center)
         } else if (otherSprite == mySprite4) {
-            game.showLongText("RedScript - Version 0.04a", DialogLayout.Center)
+            game.showLongText("RedScript - Version 0.03", DialogLayout.Center)
         } else if (otherSprite == personalization) {
             dothis = 4
             tiles.setCurrentTilemap(tilemap`level6`)
@@ -100,87 +100,87 @@ Create_file("2")
 scene.setBackgroundColor(6)
 mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
-    . f c c c c c c c c c c c c c . 
-    . f c d d d d d d d d d d d c . 
-    . f c d d b b b b b b b d d c . 
-    . f c d d d d d d d d d d d c . 
-    . f c c c c c c c c c c c c c . 
-    . f c d d d d d d d d d d d c . 
-    . f c d d b b b b b b b d d c . 
-    . f c d d d d d d d d d d d c . 
-    . f c c c c c c c c c c c c c . 
-    . f c d d d d d d d d d d d c . 
-    . f c d d b b b b b b b d d c . 
-    . f c d d d d d d d d d d d c . 
-    . f c c c c c c c c c c c c c . 
-    . f f f f f f f f f f f f f f . 
+    . 5 5 5 5 5 5 5 5 5 5 5 5 1 4 . 
+    . 5 f f f f f f f f f f 5 1 4 . 
+    . 5 5 5 5 5 5 5 5 5 5 5 5 1 4 . 
+    . 5 f f f f f f f f f f 5 1 4 . 
+    . 5 5 5 5 5 5 5 5 5 5 5 5 1 4 . 
+    . 5 f f f f f f f f f f 5 1 4 . 
+    . 5 5 5 5 5 5 5 5 5 5 5 5 1 4 . 
+    . 5 f f f f 5 5 5 5 5 5 5 1 4 . 
+    . 5 5 5 5 5 5 5 5 5 5 5 5 1 4 . 
+    . 5 5 5 5 5 5 5 5 5 5 5 5 1 4 . 
+    . 5 5 5 5 5 5 5 5 5 5 5 5 1 4 . 
+    . 5 5 5 5 5 5 5 5 5 5 5 5 1 4 . 
+    . 5 5 5 5 5 5 5 5 5 f f 5 1 4 . 
+    . 5 5 5 5 5 5 5 5 5 5 5 5 1 4 . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.MainSystemFile)
 mySprite.setPosition(20, 25)
 let mySprite2 = sprites.create(img`
-    . . . . . . . 
-    . 2 2 2 2 2 . 
-    . 2 1 1 1 2 . 
-    . 2 1 2 1 2 . 
-    . 2 1 1 1 2 . 
-    . 2 2 2 2 2 . 
-    . . . . . . . 
+    f f f f f f f 
+    f f f f f f f 
+    f f f f f f f 
+    f f f f f f f 
+    f f f f f f f 
+    f f f f f f f 
+    f f f f f f f 
     `, SpriteKind.Player)
 controller.moveSprite(mySprite2)
 mySprite3 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
-    . f 5 5 5 5 5 5 5 5 5 5 5 5 5 . 
-    . f 5 5 5 5 5 5 5 5 5 3 5 5 5 . 
-    . f 5 5 5 5 5 5 5 5 3 3 3 5 5 . 
-    . f 5 5 5 5 5 5 5 d d 3 3 3 5 . 
-    . f 5 5 5 5 5 5 d d d d 3 5 5 . 
-    . f 5 5 5 5 5 d d d d d 5 5 5 . 
-    . f 5 5 5 5 d d d d d 5 5 5 5 . 
-    . f 5 5 5 d d d d d 5 5 5 5 5 . 
-    . f 5 5 d d d d d 5 5 5 5 5 5 . 
-    . f 5 e d d d d 5 5 5 5 5 5 5 . 
-    . f 5 e e d d 5 5 5 5 5 5 5 5 . 
-    . f 5 f e e 5 5 5 5 5 5 5 5 5 . 
-    . f 5 5 5 5 5 5 5 5 5 5 5 5 5 . 
-    . f f f f f f f f f f f f f f . 
+    . 2 2 2 2 2 2 2 7 7 7 7 7 7 7 . 
+    . 2 1 1 1 1 1 1 1 1 1 1 1 1 7 . 
+    . 2 1 1 f f f f f f f f 1 1 7 . 
+    . 2 1 f 1 1 1 1 1 1 1 1 f 1 7 . 
+    . 2 1 1 1 1 1 1 1 1 1 1 f 1 7 . 
+    . 2 1 1 1 1 1 1 1 1 1 1 f 1 7 . 
+    . 2 1 1 1 1 1 1 1 1 1 1 f 1 7 . 
+    . 2 1 1 1 1 1 1 f f f f 1 1 7 . 
+    . 2 1 1 1 1 1 f 1 1 1 1 1 1 7 . 
+    . 2 1 1 1 1 1 f 1 1 1 1 1 1 7 . 
+    . 2 1 1 1 1 1 1 1 1 1 1 1 1 7 . 
+    . 2 1 1 1 1 1 f 1 1 1 1 1 1 7 . 
+    . 2 1 1 1 1 1 1 1 1 1 1 1 1 7 . 
+    . 2 2 2 2 2 2 2 7 7 7 7 7 7 7 . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.MainSystemFile)
 mySprite3.setPosition(20, 57)
 mySprite4 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
-    . f 1 1 1 1 1 1 1 1 1 1 1 1 1 . 
-    . f 1 f f f f f f f f f f f 1 . 
-    . f 1 f 2 2 2 2 2 2 2 2 2 f 1 . 
-    . f 1 f 2 2 2 2 2 2 2 2 2 f 1 . 
-    . f 1 f 2 2 2 2 2 2 2 2 2 f 1 . 
-    . f 1 f 2 2 2 2 2 2 2 2 2 f 1 . 
-    . f 1 f f f f f f f f f f f 1 . 
-    . f 1 1 1 1 1 1 1 1 1 1 1 1 1 . 
-    . f 1 f f f f f f f f f f f 1 . 
-    . f 1 1 1 1 1 1 1 1 1 1 1 1 1 . 
-    . f 1 f f f f f f f f 1 1 1 1 . 
-    . f 1 1 1 1 1 1 1 1 1 1 f f 1 . 
-    . f 1 1 1 1 1 1 1 1 1 1 1 1 1 . 
-    . f f f f f f f f f f f f f f . 
+    . a a a a a a a a a a a a a a . 
+    . a a a a a a a a a a a a a a . 
+    . a a a a a a a a a a a a a a . 
+    . a a a a a a a a a a a a a a . 
+    . a a a a a a a a a a a a a a . 
+    . a a a f f f f f f f f a a a . 
+    . a a a a f f f f f f a a a a . 
+    . a a a a a a a a a a a a a a . 
+    . a a a a a a a a a a a a a a . 
+    . a a a a a a a a a a a a a a . 
+    . a a a a a a a a a a a a a a . 
+    . a a a a a a a a a a a a a a . 
+    . a a a a a a a a a a f f f a . 
+    . a a a a a a a a a a a a a a . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.MainSystemFile)
 mySprite4.setPosition(20, 89)
 personalization = sprites.create(img`
     . . . . . . . . . . . . . . . . 
-    . f 1 1 1 1 1 1 1 1 1 1 1 1 1 . 
-    . f 2 4 5 5 e e e e e e e e 1 . 
-    . f 2 4 5 7 7 d d d d d d e 1 . 
-    . f 2 4 5 7 6 6 3 3 3 3 d e 1 . 
-    . f 2 4 5 7 6 8 8 c c 3 d e 1 . 
-    . f 2 4 5 7 6 8 a a c 3 d e 1 . 
-    . f 2 4 5 7 6 8 a a 8 3 d e 1 . 
-    . f 2 4 5 7 6 8 8 8 8 6 d e 1 . 
-    . f 2 4 5 7 6 6 6 6 6 6 7 e 1 . 
-    . f 2 4 5 7 7 7 7 7 7 7 7 5 1 . 
-    . f 2 4 5 5 5 5 5 5 5 5 5 5 1 . 
-    . f 2 4 4 4 4 4 4 4 4 4 4 4 1 . 
-    . f 2 2 2 2 2 2 2 2 2 2 2 2 1 . 
-    . f f f f f f f f f f f f f f . 
+    . 2 2 4 4 5 5 7 7 8 8 a a 3 3 . 
+    . 2 2 4 4 5 5 7 7 8 8 a a 3 3 . 
+    . e e d d b b c c f f 1 1 2 2 . 
+    . e e d d b b c c f f 1 1 2 2 . 
+    . 4 4 5 5 7 7 8 8 a a 3 3 e e . 
+    . 4 4 5 5 7 7 8 8 a a 3 3 e e . 
+    . d d b b c c f f 1 1 2 2 4 4 . 
+    . d d b b c c f f 1 1 2 2 4 4 . 
+    . 5 5 7 7 8 8 a a 3 3 e e d d . 
+    . 5 5 7 7 8 8 a a 3 3 e e d d . 
+    . b b c c f f 1 1 2 2 4 4 5 5 . 
+    . b b c c f f 1 1 2 2 4 4 5 5 . 
+    . 7 7 8 8 a a 3 3 e e d d b b . 
+    . 7 7 8 8 a a 3 3 e e d d b b . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.MainSystemFile)
 personalization.setPosition(70, 25)
