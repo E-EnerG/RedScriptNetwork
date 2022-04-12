@@ -37,8 +37,7 @@ function Create_file (text: string) {
 sprites.onOverlap(SpriteKind.Player, SpriteKind.MainSystemFile, function (sprite, otherSprite) {
     if (controller.B.isPressed()) {
         if (otherSprite == mySprite) {
-            dothis = 1
-            tiles.setCurrentTilemap(tilemap`level13`)
+            game.showLongText("Currently Under Maintenence", DialogLayout.Center)
         } else if (otherSprite == mySprite3) {
             game.showLongText("0.03 - Changed All Icons On Desktop", DialogLayout.Center)
         } else if (otherSprite == mySprite4) {
@@ -92,29 +91,30 @@ let Volume = 50
 let BrightnessWhite = 255
 let BrightnessBlack = 0
 dothis = 0
-let textSprite = textsprite.create("Volume - " + convertToText(Volume))
+let textSprite = textsprite.create("Volume - " + convertToText(Volume) + "", 1, 15)
+textSprite.setBorder(1, 1, 0)
 textSprite.setPosition(100, 100)
 tiles.setCurrentTilemap(tilemap`level4`)
 Create_file("1")
 Create_file("2")
 scene.setBackgroundColor(6)
 mySprite = sprites.create(img`
-    . . . . . . . . . . . . . . . . 
-    . 5 5 5 5 5 5 5 5 5 5 5 5 1 4 . 
-    . 5 f f f f f f f f f f 5 1 4 . 
-    . 5 5 5 5 5 5 5 5 5 5 5 5 1 4 . 
-    . 5 f f f f f f f f f f 5 1 4 . 
-    . 5 5 5 5 5 5 5 5 5 5 5 5 1 4 . 
-    . 5 f f f f f f f f f f 5 1 4 . 
-    . 5 5 5 5 5 5 5 5 5 5 5 5 1 4 . 
-    . 5 f f f f 5 5 5 5 5 5 5 1 4 . 
-    . 5 5 5 5 5 5 5 5 5 5 5 5 1 4 . 
-    . 5 5 5 5 5 5 5 5 5 5 5 5 1 4 . 
-    . 5 5 5 5 5 5 5 5 5 5 5 5 1 4 . 
-    . 5 5 5 5 5 5 5 5 5 5 5 5 1 4 . 
-    . 5 5 5 5 5 5 5 5 5 f f 5 1 4 . 
-    . 5 5 5 5 5 5 5 5 5 5 5 5 1 4 . 
-    . . . . . . . . . . . . . . . . 
+    2 2 2 . . . . . . . . . . . . . 
+    2 2 2 2 5 5 5 5 5 5 5 5 5 1 4 . 
+    2 2 2 2 2 f f f f f f f 5 1 4 . 
+    . 2 2 2 2 2 5 5 5 5 5 5 5 1 4 . 
+    . 5 2 2 2 2 2 f f f f f 5 1 4 . 
+    . 5 5 2 2 2 2 2 5 5 5 5 5 1 4 . 
+    . 5 f f 2 2 2 2 2 f f f 5 1 4 . 
+    . 5 5 5 5 2 2 2 2 2 5 5 5 1 4 . 
+    . 5 f f f f 2 2 2 2 2 5 5 1 4 . 
+    . 5 5 5 5 5 5 2 2 2 2 2 5 1 4 . 
+    . 5 5 5 5 5 5 5 2 2 2 2 2 1 4 . 
+    . 5 5 5 5 5 5 5 5 2 2 2 2 2 4 . 
+    . 5 5 5 5 5 5 5 5 5 2 2 2 2 2 . 
+    . 5 5 5 5 5 5 5 5 5 f 2 2 2 2 2 
+    . 5 5 5 5 5 5 5 5 5 5 5 2 2 2 2 
+    . . . . . . . . . . . . . 2 2 2 
     `, SpriteKind.MainSystemFile)
 mySprite.setPosition(20, 25)
 let mySprite2 = sprites.create(img`
