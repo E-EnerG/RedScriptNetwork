@@ -6,7 +6,8 @@
         "device": "*",
         "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0",
         "Color Fading": "github:jwunderl/pxt-color#v0.2.2",
-        "light": "*"
+        "light": "*",
+        "arcade-text": "github:microsoft/arcade-text#v1.3.0"
     },
     "files": [
         "main.blocks",

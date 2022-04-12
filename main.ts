@@ -16,7 +16,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile1`, function (sprite, l
         if (controller.B.isPressed()) {
             game.splash("{Press --> to increase brightness}", "{Press <-- to decrease Brightness}")
             game.splash("Click {menu} if you want to exit brightness editing")
-            game.splash("!!Note!! It only works with White & Black")
+            game.splash("!!Note!! This mode is under maintenance")
             dothis = 5
         }
     }
@@ -55,16 +55,30 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.MainSystemFile, function (sprite
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     if (dothis == 5) {
         BrightnessWhite += -10
+    } else if (dothis2 == 6) {
+        Volume += -1
     }
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     if (dothis == 5) {
         BrightnessWhite += 10
+    } else if (dothis2 == 6) {
+        Volume += 1
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile2`, function (sprite, location) {
+    if (dothis == 4) {
+        if (controller.B.isPressed()) {
+            game.splash("{Press --> to increase volume}", "{Press <-- to decrease volume}")
+            game.splash("Click {menu} if you want to exit volume editing")
+            dothis2 = 6
+        }
     }
 })
 controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
     dothis = 0
 })
+let dothis2 = 0
 let mainstorage = 0
 let currentsessionstorageapps = 0
 let currentsessionstorageuser = 0
@@ -74,9 +88,12 @@ let mySprite4: Sprite = null
 let mySprite3: Sprite = null
 let mySprite: Sprite = null
 let dothis = 0
+let Volume = 50
 let BrightnessWhite = 255
 let BrightnessBlack = 0
 dothis = 0
+let textSprite = textsprite.create("Volume - " + convertToText(Volume))
+textSprite.setPosition(100, 100)
 tiles.setCurrentTilemap(tilemap`level4`)
 Create_file("1")
 Create_file("2")
@@ -191,4 +208,8 @@ forever(function () {
     } else if (dothis == 1) {
         tiles.setCurrentTilemap(tilemap`level13`)
     }
+})
+forever(function () {
+    textSprite.setText("Volume - " + convertToText(Volume))
+    music.setVolume(Volume)
 })
