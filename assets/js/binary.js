@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.8.22/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.4","target":"arcade","targetVersion":"1.8.22","repo":"e-energ/redscriptnetwork"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.8.22/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.5","target":"arcade","targetVersion":"1.8.22","repo":"e-energ/redscriptnetwork"}
 // total=1623071 new=7.88% cached=86.81% other=5.31%
 (function (ectx) {
 'use strict';
@@ -481,7 +481,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P22250(s) {
+function _main___P22299(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1145,13 +1145,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P22250.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-text/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P22250.continuations = [ 48,49,50 ]
+_main___P22299.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-text/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P22299.continuations = [ 48,49,50 ]
 
-function _main___P22250_mk(s) {
+function _main___P22299_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P22250, depth: s.depth + 1,
+        parent: s, fn: _main___P22299, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -55044,5 +55044,5 @@ const sprites_StaticObstacle__C2277_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["transparency16___4290","tile1___4291","tile2___4292","tile3___4293","tile4___4294","tile5___4295","MainSystemFile___4272","dothis___4283","currentsessionstoragecboy___4278","currentsessionstorageuser___4277","currentsessionstorageapps___4276","mainstorage___4275","mySprite___4282","mySprite3___4281","mySprite4___4280","personalization___4279","BrightnessWhite___4285","dothis2___4274","Volume___4284","textSprite___4287","mySprite2___4288"])
 
-return _main___P22250
+return _main___P22299
 })
