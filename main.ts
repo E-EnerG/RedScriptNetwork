@@ -146,9 +146,9 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.MainSystemFile, function (sprite
             dothis = 2
             tiles.setCurrentTilemap(tilemap`level13`)
         } else if (otherSprite == mySprite3) {
-            game.showLongText("0.1.0 - Revamped the User Interface", DialogLayout.Center)
+            game.showLongText("0.1.1 - Base Version Branch Created", DialogLayout.Center)
         } else if (otherSprite == mySprite4) {
-            game.showLongText("RedScript Base - Version 0.1.0", DialogLayout.Center)
+            game.showLongText("RedScript Base - Version 0.1.1", DialogLayout.Center)
         } else if (otherSprite == personalization) {
             dothis = 4
             tiles.setCurrentTilemap(tilemap`level6`)
